@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<h1></h1>
+<button type="button" onclick="iloveyou()">i love you</button>
+<p id="nice"> ooooooooooooooo</p>
+<img onmouseover="bigImg(this)" onmouseout="normImg(this)" border = "0" src="MGS3BigBoss.png" alt="nice" width="50" height="50">
+</body>
+<script>
+function iloveyou() {
+	var name=prompt("what is your name?","guy fieri");
+	if (name != null) {
+	document.getElementById("nice").innerHTML="I love you," + name +"- BIGGGGGGGboss";
+	}
+}
+function bigImg(x){
+	x.style.height ="5000px";
+	x.style.width = "5000px";
+}
+function normImg(x) {
+	x.style.height = "50px";
+	x.style.width = "50px";
+}
+</script>
+</html>
